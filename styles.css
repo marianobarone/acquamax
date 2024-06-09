@@ -1,0 +1,348 @@
+:root {
+  --primary-color: #1681E5;
+  --secondary-color: #ffffff;
+}
+
+* {
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  scroll-behavior: smooth;
+  background-color: --secondary-color;
+}
+
+footer span,
+footer a {
+  color: var(--primary-color)
+}
+
+footer.border-top {
+  opacity: 0.5;
+}
+
+footer i {
+  font-size: 16px;
+}
+
+footer i {
+  font-size: 20px;
+}
+
+footer i:hover {
+  color: #4ecca3;
+}
+
+#navbarNav {
+  justify-content: center;
+}
+
+.navbar {
+  /* border-bottom: 1px solid #eeeeee; */
+  background-color: var(--primary-color);
+}
+
+.navbar a {
+  color: var(--secondary-color);
+}
+
+.container {
+  margin-top: 56px;
+  max-width: 1000px;
+}
+
+.chi-siamo {
+  display: flex;
+  justify-content: center;
+  /* Centra horizontalmente */
+  align-items: center;
+  /* Centra verticalmente */
+}
+
+.chi-siamo p {
+  text-align: justify;
+}
+
+.logo-img {
+  border-radius: 50%;
+}
+
+.logo-navbar {
+  border-right: 1px solid;
+  padding-right: 10px;
+  border-left: 1px solid;
+  padding-left: 10px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.servizi-cards{
+  justify-content: center;
+}
+
+.service-card {
+  display: flex;
+  align-items: flex-start;
+  /*align-items: center;  Alinea verticalmente los elementos */
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px;
+  max-width: 300px;
+  background-color: #f5f5f5;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+  font-size: 40px;
+  color: #1681E5;
+  margin-right: 15px;
+}
+
+.content {
+  flex: 1;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.lavori-img{
+  display: flex;
+  justify-content: center;
+}
+
+.img-lavoro{
+  padding: 0;
+}
+
+.card-img-top {
+  width: 100%;
+  max-width: 40rem; /* Cambia esto según tus necesidades */
+  height: 20rem; /* Para que las imágenes sean cuadradas */
+  object-fit: cover; /* Ajusta y recorta el excedente */
+}
+
+
+/* #welcome,
+#skills {
+  background-color: #f0f0f0;
+} */
+
+.section {
+  /* margin: 50px;
+  padding: 50px; */
+  scroll-margin-top: 70px;
+  margin-top: 56px;
+  margin-bottom: 60px;
+  color: #1681E5;
+}
+
+.section h1 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.icon-card:hover img {
+  /* background-image: "https://icongr.am/devicon/html5-plain.svg?size=128&color=currentColor"; */
+  content: url("https://icongr.am/devicon/html5-plain.svg?size=128&color=currentColor");
+}
+
+.lang-icon i {
+  transition: 0.5s all ease-in-out;
+}
+
+.icon-card:hover i {
+  transform: scale(1.5);
+}
+
+.icon-card {
+  width: 100px;
+  margin: 10px;
+  /* background-color: #3f3f3f; */
+  background-color: transparent;
+  color: #eeeeee;
+  border: 1px solid;
+  height: 150px;
+}
+
+[class^="devicon"] {
+  font-size: 50px;
+  color: #eeeeee;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* [class^="devicon"]:hover {
+    transform: scale(1.5);
+} */
+
+.skills-description p {
+  font-size: 16px;
+}
+
+.project-card {
+  height: 240px;
+  color: #333333;
+  opacity: 0.8;
+}
+
+.project-card .card-body {
+  background-color: #4ecca38c;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.project-card:hover {
+  transform: translateY(-0.5rem) scale(1.0125);
+  -webkit-box-shadow: 0px 10px 13px -7px #000000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  opacity: 1;
+  border: 1px solid #4ecca3;
+}
+
+.project-card:hover .card-body {
+  background-color: #333333;
+  color: white;
+}
+
+.carousel-btn {
+  text-align: right;
+}
+
+.project-tech p {
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+.project-sites {
+  margin-top: 10px;
+}
+
+.project-sites i {
+  font-size: 20px;
+  color: #3f3f3f;
+  padding-right: 5px;
+}
+
+.project-sites a:hover i {
+  transform: scale(1.2);
+  color: #4ecca3;
+}
+
+.fa-folder-open {
+  font-size: 25px;
+}
+
+[class*="fa-arrow"] {
+  color: #eeeeee;
+}
+
+[class*="fa-arrow"]:focus+.btn,
+.btn:focus {
+  color: var(--bs-btn-hover-color);
+  background-color: var(--bs-btn-hover-bg);
+  border: none;
+  outline: none;
+  box-shadow: var(--bs-btn-focus-box-shadow);
+}
+
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 1000;
+}
+
+.whatsapp-float i {
+  margin-top: 16px;
+}
+
+
+
+@media (max-width: 768px) {
+  .whatsapp-float {
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+    font-size: 25px;
+  }
+
+  .whatsapp-float i {
+    margin-top: 12px;
+  }
+
+}
+
+/* MEDIA QUERIES */
+
+/* // Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+  .section {
+    margin: 0px;
+    padding: 0px;
+  }
+} */
+
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .section {
+    /* Arriba | Derecha | Abajo | Izquierda */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding: 0px;
+  }
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .logo-img{
+    display: flex;
+    width: 25%;
+    justify-content: center;
+  }
+
+  .chi-siamo{
+    padding-top: 10px;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .chi-siamo p{
+    font-size: 14px;
+  }
+
+  .card-img-top {
+    height: 10rem; /* Para que las imágenes sean cuadradas */
+  }
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {}
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {}
+
+/* // X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {}
