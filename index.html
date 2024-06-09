@@ -35,12 +35,14 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="#about-me">Chi siamo</a>
+            <a class="nav-link" href="#chi-siamo">Chi siamo</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#skills">Servizi</a>
+            <a class="nav-link" href="#servizi">Servizi</a>
           </li>
-          <a class="navbar-brand logo-navbar" href="#">AQUAMAX</a>
+          <a class="navbar-brand logo-navbar" href="#">
+            <img src="img/ACQUAMAX-navbar.png" width="200" height="">
+          </a>
           <li class="nav-item">
             <a class="nav-link" href="#lavori">Lavori</a>
           </li>
@@ -60,18 +62,19 @@
   <section id="welcome" class="section">
     <div class="col-md-12">
       <!-- <img class="img-fluid" alt="100%x280" width="100%" height="400" src="img/home.jpg"> -->
-      <img class="img-fluid" width="100%" height="200" src="img/home_2.jpg">
+      <img class="img-fluid" width="100%" height="200" src="img/home_3.jpg">
     </div>
   </section>
 
   <div class="container">
 
-    <!-- ABOUT ME SECTION -->
-    <section id="about-me" class="section">
+    <!-- CHI SIAMO SECTION -->
+    <section id="chi-siamo" class="section">
       <div class="row">
         <h1>Chi siamo</h1>
-        <div class="col-md-4">
-          <img class="img-fluid logo-img" src="img/logo.jpeg" alt="">
+        <div class="col-md-4 div-logo-img">
+          <!-- <img class="img-fluid logo-img" src="img/logo.jpeg" alt=""> -->
+          <img class="img-fluid logo-img" src="img/ACQUAMAX - LOGO.png" alt="">
         </div>
         <div class="col-md-8 chi-siamo">
 
@@ -91,52 +94,83 @@
       </div>
     </section>
 
-    <!-- SKILLS SECTION -->
-    <section id="skills" class="section">
+    <!-- SERVIZI SECTION -->
+    <section id="servizi" class="section">
       <h1>Servizi</h1>
 
       <div class="row servizi-cards">
 
-
-
-        <!-- Card 1: Riparazioni -->
+        <!-- Card 1: Caldaie -->
         <div class="col-md-4 service-card">
           <div class="icon">
-            <i class="fas fa-wrench"></i>
+            <i class="fas fa-fire"></i>
           </div>
           <div class="content">
-            <div class="title">Riparazioni</div>
-            <div class="description">I nostri esperti risolvono qualsiasi problema in modo rapido ed efficiente.</div>
-            <!-- <a href="#" class="details">VEDI DETTAGLI ></a> -->
+            <div class="title">Caldaie</div>
+            <div class="description">Installazione, manutenzione e riparazione di caldaie per il massimo comfort
+              termico.</div>
           </div>
         </div>
 
-        <!-- Card 2: Nuove installazioni -->
+        <!-- Card 2: Idrico Sanitari -->
         <div class="col-md-4 service-card">
           <div class="icon">
-            <i class="fas fa-tools"></i>
+            <i class="fas fa-tint"></i>
           </div>
           <div class="content">
-            <div class="title">Nuove installazioni</div>
-            <div class="description">Installiamo nuovi sistemi e apparecchiature con la massima precisione e cura.</div>
+            <div class="title">Idrico Sanitari</div>
+            <div class="description">Servizi idraulici per garantire un sistema idrico efficiente e sicuro.</div>
           </div>
         </div>
 
-        <!-- Card 3: Ristrutturazioni complete -->
+        <!-- Card 3: Riscaldamento -->
         <div class="col-md-4 service-card">
           <div class="icon">
-            <i class="fas fa-hammer"></i>
+            <i class="fas fa-thermometer-full"></i>
           </div>
           <div class="content">
-            <div class="title">Ristrutturazioni complete</div>
-            <div class="description">Trasformiamo il tuo spazio con ristrutturazioni complete di alta qualità.</div>
+            <div class="title">Riscaldamento</div>
+            <div class="description">Sistemi di riscaldamento moderni ed efficienti per ambienti confortevoli tutto
+              l'anno.</div>
+          </div>
+        </div>
+
+        <!-- Card 4: Condizionamento -->
+        <div class="col-md-4 service-card">
+          <div class="icon">
+            <i class="fas fa-wind"></i>
+          </div>
+          <div class="content">
+            <div class="title">Condizionamento</div>
+            <div class="description">Installazione e manutenzione di sistemi di condizionamento per il massimo comfort
+              estivo.</div>
+          </div>
+        </div>
+
+        <!-- Card 5: Depurazione Acqua -->
+        <div class="col-md-4 service-card">
+          <div class="icon">
+            <i class="fas fa-tint-slash"></i>
+          </div>
+          <div class="content">
+            <div class="title">Depurazione Acqua</div>
+            <div class="description">Sistemi di depurazione dell'acqua per garantire acqua pulita e sicura per la tua
+              famiglia.</div>
+          </div>
+        </div>
+
+        <!-- Card 6: Ristrutturazione Bagni -->
+        <div class="col-md-4 service-card">
+          <div class="icon">
+            <i class="fas fa-bath"></i>
+          </div>
+          <div class="content">
+            <div class="title">Ristrutturazione Bagni</div>
+            <div class="description">Rinnovazione completa dei bagni per creare spazi funzionali e moderni.</div>
           </div>
         </div>
 
       </div>
-
-
-
     </section>
 
     <!-- LAVORI SECTION -->
@@ -144,8 +178,7 @@
       <div class="col-md-12">
         <h1>Lavori</h1>
 
-        <div class="row lavori-img no-gutters">
-
+        <div class="row lavori-img">
 
           <div class="col-md-4 col-4 img-lavoro">
             <img class="card-img-top img-fluid" src="img/Lavori-img/lavori-1.jpg" alt="Descripción de la imagen">
@@ -172,26 +205,78 @@
 
     </section>
 
+    <!-- DATI SECTION -->
+    <section id="dati" class="section">
+      <div class="col-md-12">
+        <h1>Informazioni di contatto</h1>
+
+        <div class="row dati-section">
+          <div class="col-md-6">
+
+
+            <div class="contact-card">
+              <div class="icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="info">
+                <span class="label">Telefono:</span>
+                <span class="value">339 4883495</span>
+              </div>
+            </div>
+
+
+
+            <div class="contact-card">
+              <div class="icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="info">
+                <span class="label">Email:</span>
+                <span class="value">infoacquamax@gmail.com</span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-md-6">
+            <div class="contact-card google-card">
+              <div class="icon">
+                <i class="fas fa-map-marker-alt"></i> <!-- Icono de ubicación -->
+              </div>
+              <div class="info">
+                <span class="label">Posizione:</span>
+              </div>
+            </div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5741.54057716168!2d12.505714076568392!3d43.98479983092029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132cea3818aa1999%3A0xb754e0f46c1f520a!2sVia%20dei%20Paceri%2C%2075%2C%2047891%20Falciano%2C%20San%20Marino!5e0!3m2!1ses!2ses!4v1717932206456!5m2!1ses!2ses"
+              width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
   </div>
 </body>
 
-<div class="container">
-  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-4 border-top">
-    <div class="col-md-4 d-flex align-items-center">
-      <span>© 2022 Designed by Mariano Barone</span>
-    </div>
 
-    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-      <li class="ms-3"><a class="text-muted" href="#">
-          <a href="https://github.com/marianobarone" target="_blank"><i class="fa-brands fa-github"></i></a>
-      </li>
-      <li class="ms-3">
-        <a href="https://www.linkedin.com/in/mariano-barone-098243180/" target="_blank"><i
-            class="fa-brands fa-linkedin"></i></a>
-      </li>
-    </ul>
-  </footer>
-</div>
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-4 border-top">
+  <div class="col-md-4 d-flex align-items-center">
+    <span>© 2024 Designed by Mariano Barone</span>
+  </div>
+
+  <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+    <li class="ms-3"><a class="text-muted" href="#">
+        <a href="https://github.com/marianobarone" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+    </li>
+    <li class="ms-3">
+      <a href="https://www.linkedin.com/in/mariano-barone-098243180/" target="_blank"><i
+          class="fa-brands fa-instagram"></i></a>
+    </li>
+  </ul>
+</footer>
+
 
 <!-- SCRIPTS -->
 

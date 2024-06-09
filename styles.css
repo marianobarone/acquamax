@@ -12,13 +12,18 @@ body {
   background-color: --secondary-color;
 }
 
+footer {
+  padding: 40px;
+  background-color: #636262;
+}
+
 footer span,
 footer a {
-  color: var(--primary-color)
+  color: var(--secondary-color)
 }
 
 footer.border-top {
-  opacity: 0.5;
+  /* opacity: 0.5; */
 }
 
 footer i {
@@ -35,6 +40,10 @@ footer i:hover {
 
 #navbarNav {
   justify-content: center;
+}
+
+.navbar-nav {
+  align-items: center;
 }
 
 .navbar {
@@ -68,18 +77,20 @@ footer i:hover {
 }
 
 .logo-navbar {
-  border-right: 1px solid;
-  padding-right: 10px;
-  border-left: 1px solid;
-  padding-left: 10px;
+
   margin-right: 15px;
   margin-left: 15px;
 }
 
-.servizi-cards{
+.dati-section {
+  align-items: center;
+}
+
+.servizi-cards {
   justify-content: center;
 }
 
+/*SERVICE-CARD*/
 .service-card {
   display: flex;
   align-items: flex-start;
@@ -115,20 +126,58 @@ footer i:hover {
   margin-bottom: 10px;
 }
 
-.lavori-img{
+/*SERVICE-CARD*/
+
+/*CONTACT-CARD*/
+.contact-card {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+.google-card {
+  margin-bottom: 0px;
+}
+
+.icon {
+  font-size: 24px;
+  color: #1681E5;
+  margin-right: 15px;
+}
+
+.info {
+  flex: 1;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.value {
+  color: #555;
+}
+
+/*CONTACT-CARD*/
+
+.lavori-img {
   display: flex;
   justify-content: center;
 }
 
-.img-lavoro{
+.img-lavoro {
   padding: 0;
 }
 
 .card-img-top {
   width: 100%;
-  max-width: 40rem; /* Cambia esto según tus necesidades */
-  height: 20rem; /* Para que las imágenes sean cuadradas */
-  object-fit: cover; /* Ajusta y recorta el excedente */
+  max-width: 40rem;
+  /* Cambia esto según tus necesidades */
+  height: 20rem;
+  /* Para que las imágenes sean cuadradas */
+  object-fit: cover;
+  /* Ajusta y recorta el excedente */
 }
 
 
@@ -317,24 +366,28 @@ footer i:hover {
 
 /* // Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
-  .logo-img{
+  .div-logo-img {
     display: flex;
-    width: 25%;
     justify-content: center;
   }
 
-  .chi-siamo{
+  .logo-img {
+    width: 25%;
+  }
+
+  .chi-siamo {
     padding-top: 10px;
     padding-right: 40px;
     padding-left: 40px;
   }
 
-  .chi-siamo p{
+  .chi-siamo p {
     font-size: 14px;
   }
 
   .card-img-top {
-    height: 10rem; /* Para que las imágenes sean cuadradas */
+    height: 10rem;
+    /* Para que las imágenes sean cuadradas */
   }
 }
 
