@@ -1,5 +1,8 @@
 $(document).ready(function () {
 
+    var currentYear = new Date().getFullYear();
+    $('#webYear').text(currentYear);
+
     // const themeToggleBtn = document.getElementById('theme-toggle');
     // let currentTheme = localStorage.getItem('theme') || 'light';
 

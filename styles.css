@@ -128,16 +128,33 @@ footer i:hover {
 /*SERVICE-CARD*/
 .service-card {
   display: flex;
-  align-items: flex-start;
-  /*align-items: center;  Alinea verticalmente los elementos */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
-  padding: 10px;
+  padding: 20px;
   margin: 10px;
   max-width: 300px;
-  /* background-color: #f5f5f5; */
   background-color: var(--card-background);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex-direction: column; /* Asegura que los elementos estén en columna */
+}
+
+/* Efecto hover para las tarjetas */
+.service-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagen centrada */
+.service-icon {
+  width: 80px;  /* Ajusta el tamaño de la imagen */
+  height: 80px; /* Ajusta el tamaño de la imagen */
+  margin-bottom: 15px; /* Espacio entre la imagen y el título */
+  object-fit: contain; /* Asegura que la imagen se ajuste sin deformarse */
+  display: block; /* La imagen se convierte en un bloque centrado */
 }
 
 .icon {
