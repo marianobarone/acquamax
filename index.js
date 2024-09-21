@@ -1,5 +1,9 @@
 $(document).ready(function () {
 
+    (function () {
+        emailjs.init("xJMClN6ORiLd-82a8"); // Reemplaza con tu USER ID
+    })();
+
     var currentYear = new Date().getFullYear();
     $('#webYear').text(currentYear);
 
@@ -29,7 +33,7 @@ $(document).ready(function () {
     //     });
     // });
 
-    
+
 
 
     $('.navbar-nav a').on('click', function () {
@@ -65,4 +69,53 @@ document.addEventListener('DOMContentLoaded', (event) => {
             themeIcon.classList.add('fa-sun');
         }
     });
+
+    var forms = document.querySelectorAll('.needs-validation');
+
+    // Activa la validación en cada formulario
+    Array.prototype.slice.call(forms).forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+            }
+
+            // Oculta la validación después de 10 segundos
+            setTimeout(() => {
+                form.classList.remove('was-validated');
+            }, 5000); // 10000 ms = 10 segundos
+
+            form.classList.add('was-validated');
+        }, false);
+    });
 });
+
+document.getElementById('form-consulta').addEventListener('submit', function (event) {
+    event.preventDefault(); // Evita el envío por defecto
+
+    // Recoge los datos del formulario
+    const formData = {
+        name: document.getElementById('inputNome').value,
+        email: document.getElementById('exampleInputEmail1').value,
+        phone: document.getElementById('inputNumber').value,
+        message: document.getElementById('exampleFormControlTextarea1').value,
+    };
+
+    // Envía el correo
+    emailjs.send('service_golden_test', 'template_golden_test', formData)
+        .then(function (response) {
+            console.log('Correo enviado con éxito', response.status, response.text);
+            alert('¡Mensaje enviado con éxito!');
+
+            const form = document.getElementById('form-consulta');
+            form.classList.remove('was-validated'); // Elimina la validación
+            document.getElementById('inputNome').value = '';
+            document.getElementById('exampleInputEmail1').value = '';
+            document.getElementById('inputNumber').value = '';
+            document.getElementById('exampleFormControlTextarea1').value = '';
+        }, function (error) {
+            console.log('Error al enviar correo', error);
+            alert('Error al enviar el mensaje. Inténtalo de nuevo.');
+        });
+});
+

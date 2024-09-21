@@ -139,7 +139,7 @@
 
         <!-- Card 5: Depurazione acqua -->
         <div class="col-md-4 service-card">
-          <img class="service-icon" src="icons/pipes_2373582.png">
+          <img class="service-icon" src="icons/filtros.png">
           <div class="title">Depurazione acqua</div>
           <div class="description">
             Sistemi di depurazione dell'acqua per garantire acqua pulita e sicura
@@ -158,7 +158,7 @@
 
         <!-- Card 7: Impianti gas -->
         <div class="col-md-4 service-card">
-          <img class="service-icon" src="icons/gas.png">
+          <img class="service-icon" src="icons/gas2.png">
           <div class="title">Impianti gas</div>
           <div class="description">
             Realizzazione impianti di distribuzione gas per tutti gli impianti domestici
@@ -202,52 +202,76 @@
 
     <!-- DATI SECTION -->
     <section id="dati" class="section">
-      <div class="col-md-12">
+      <div class="row d-flex align-items-center">
         <h3 class="text-center">Informazioni di contatto</h3>
 
-        <div class="row dati-section">
-          <div class="col-md-6">
-
-
-            <div class="contact-card">
-              <div class="icon">
-                <i class="fas fa-phone"></i>
-              </div>
-              <div class="info">
-                <span class="label">Telefono:</span>
-                <span class="value">339 4883495</span>
-              </div>
+        <div class="col-md-6">
+          <form id="form-consulta" class="needs-validation" novalidate>
+            <div class="form-group py-2">
+              <label for="inputNome">Nome*</label>
+              <input type="text" class="form-control" id="inputNome" placeholder="Scrivi tuo nome" required>
+              <div class="invalid-feedback">Per favore inserisci il tuo nome.</div>
             </div>
 
-
-
-            <div class="contact-card">
-              <div class="icon">
-                <i class="fas fa-envelope"></i>
-              </div>
-              <div class="info">
-                <span class="label">Email:</span>
-                <span class="value">infoacquamax@gmail.com</span>
-              </div>
+            <div class="form-group py-2">
+              <label for="exampleInputEmail1">Email*</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Scrivete la vostra email" required>
+              <div class="invalid-feedback">Per favore inserisci una email valida.</div>
             </div>
 
+            <div class="form-group py-2">
+              <label for="inputNumer">Numero</label>
+              <input type="text" class="form-control" id="inputNumber"
+                placeholder="Inserisci il tuo numero di telefono">
+            </div>
+
+            <div class="form-group py-2">
+              <label for="exampleFormControlTextarea1">Messaggio*</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                placeholder="Scrivi il tuo messaggio" required></textarea>
+              <div class="invalid-feedback">Per favore scrivi il tuo messaggio.</div>
+            </div>
+
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary mt-3">Submit</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="col-md-6">
+          <div class="contact-card py-1">
+            <div class="icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="info">
+              <span class="label">Telefono:</span>
+              <span class="value">339 4883495</span>
+            </div>
           </div>
 
-          <div class="col-md-6">
-            <div class="contact-card google-card">
-              <div class="icon">
-                <i class="fas fa-map-marker-alt"></i> <!-- Icono de ubicación -->
-              </div>
-              <div class="info">
-                <span class="label">Posizione:</span>
-              </div>
+          <div class="contact-card py-1">
+            <div class="icon">
+              <i class="fas fa-envelope"></i>
             </div>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5741.54057716168!2d12.505714076568392!3d43.98479983092029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132cea3818aa1999%3A0xb754e0f46c1f520a!2sVia%20dei%20Paceri%2C%2075%2C%2047891%20Falciano%2C%20San%20Marino!5e0!3m2!1ses!2ses!4v1717932206456!5m2!1ses!2ses"
-              width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="info">
+              <span class="label">Email:</span>
+              <span class="value">infoacquamax@gmail.com</span>
+            </div>
           </div>
 
+          <div class="contact-card google-card py-1">
+            <div class="icon">
+              <i class="fas fa-map-marker-alt"></i> <!-- Icono de ubicación -->
+            </div>
+            <div class="info">
+              <span class="label">Posizione:</span>
+            </div>
+          </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5741.54057716168!2d12.505714076568392!3d43.98479983092029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132cea3818aa1999%3A0xb754e0f46c1f520a!2sVia%20dei%20Paceri%2C%2075%2C%2047891%20Falciano%2C%20San%20Marino!5e0!3m2!1ses!2ses!4v1717932206456!5m2!1ses!2ses"
+            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </section>
@@ -281,6 +305,8 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script src="index.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
 
 </html>
 
